@@ -1,0 +1,23 @@
+Python 3.11.4 (v3.11.4:d2340ef257, Jun  6 2023, 19:15:51) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> def bubbleSort (arr):
+...     n = len(arr)
+...     swapped = False
+...     for i in range(n-1):
+...         for j in range(0, n-i-1):
+...             if arr[j] > arr[j + 1]:
+...                 swapped = True
+...                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
+...         if not swapped:
+...             return
+... 
+...         
+>>> arr = [64, 34, 25, 12, 22, 11, 90]
+>>> bubbleSort(arr)
+>>> print("Sorted array is: ")
+Sorted array is: 
+>>> for i in range(len(arr)):
+...     print("%d" % arr[i], end = " ")
+... 
+...     
+11 12 22 25 34 64 90 
